@@ -1,0 +1,13 @@
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\RPGBlowa.exe
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\obj\Debug\netcoreapp3.1\RPGBlowa.csprojAssemblyReference.cache
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\obj\Debug\netcoreapp3.1\RPGBlowa.AssemblyInfoInputs.cache
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\obj\Debug\netcoreapp3.1\RPGBlowa.AssemblyInfo.cs
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\RPGBlowa.deps.json
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\RPGBlowa.runtimeconfig.json
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\RPGBlowa.runtimeconfig.dev.json
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\RPGBlowa.dll
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\RPGBlowa.pdb
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\obj\Debug\netcoreapp3.1\RPGBlowa.csproj.CopyComplete
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\obj\Debug\netcoreapp3.1\RPGBlowa.dll
+C:\Users\josea\source\repos\RPGBlowa\RPGBlowa\obj\Debug\netcoreapp3.1\RPGBlowa.pdb
