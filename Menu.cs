@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace RPGBlowa
@@ -37,7 +39,7 @@ ____________ _____ ______ _
             }
         }
 
-        public static void SelectOption()
+        public static void SelectOption(Player p)
         {
             bool validValue = false;
             int selectedOption = 0;
@@ -63,7 +65,16 @@ ____________ _____ ______ _
 
             switch (selectedOption)
             {
-
+                
+                case 1:
+                    //Fight
+                    break;
+                case 2:
+                    //Shop
+                    break;
+                case 3:
+                    Environment.Exit(0);
+                    break;
             }
         }
     }
