@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.IO;
-using System.Collections.Generic;
+﻿using System;
 
 namespace RPGBlowa
 {
@@ -9,7 +6,7 @@ namespace RPGBlowa
     {
         static void Main(string[] args)
         {
-            List<Enemy> enemies = JsonConvert.DeserializeObject<List<Enemy>>(File.ReadAllText("../../../enemies.json"));
+            Console.WriteLine("Hello World!");
         }
     }
 }
