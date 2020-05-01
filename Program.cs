@@ -19,6 +19,7 @@ namespace RPGBlowa
 
             Player player = new Player(playerName);
 
+            Menu.ShowMenu();
 
         }
     }
