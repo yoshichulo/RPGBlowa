@@ -6,8 +6,8 @@ namespace RPGBlowa
 {
     class Enemy : Entity
     {
-        public int GoldRewardMin { get; set; }
-        public int GoldRewardMax { get; set; }
+        public int GoldReward;
+        public int ExpReward;
 
         public void StatView()
         {
@@ -15,8 +15,8 @@ namespace RPGBlowa
             Console.WriteLine("Hp: " + Hp);
             Console.WriteLine("Def: " + Def);
             Console.WriteLine("Atk: " + Atk);
-            Console.WriteLine("GoldRewardMin: " + GoldRewardMin);
-            Console.WriteLine("GoldRewardMax: " + GoldRewardMax);
+            Console.WriteLine("GoldReward: " + GoldReward);
+            Console.WriteLine("ExpReward: " + ExpReward);
             Console.WriteLine("HitChance: " + HitChance);
             Console.WriteLine("DodgeChance: " + DodgeChance);
             Console.WriteLine("CritChance: " + CritChance);

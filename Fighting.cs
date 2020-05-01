@@ -12,13 +12,16 @@ namespace RPGBlowa
         {
             int playerActualHp = p.Hp;
             int enemyActualHp = e.Hp;
-
             int playerDmg, enemyDmg;
 
+            Console.WriteLine("You found a {0}!", e.Name);
+
+            // Fight until someone dies
             while (playerActualHp > 0 || enemyActualHp > 0)
             {
                 playerDmg = CalculateDamage(p, e.DodgeChance);
                 enemyDmg = CalculateDamage(e, p.DodgeChance);
+
 
                 Console.WriteLine("Player deals: " + playerDmg);
                 Console.WriteLine("Enemy deals: " + enemyDmg);

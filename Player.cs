@@ -13,14 +13,29 @@ namespace RPGBlowa
         public Player(string Name)
         {
             this.Name = Name;
-            this.Hp = 100;
-            this.Def = 5;
-            this.Atk = 10;
-            this.Gold = 0;
-            this.HitChance = .8;
-            this.DodgeChance = .1;
-            this.CritChance = .1;
-            this.CritMulti = 1.2;
+            Hp = 100;
+            Def = 5;
+            Atk = 10;
+            Gold = 0;
+            HitChance = .8;
+            DodgeChance = .1;
+            CritChance = .1;
+            CritMulti = 1.2;
+            Exp = 0;
+        }
+
+        public void LevelUp()
+        {
+            Level++;
+            Hp += 10;
+            Atk += 2;
+            Def += 1;
+            Exp = 0;
+        }
+
+        public int ExpNeeded()
+        {
+            return (int)Math.Round((Math.Pow(Level, 3/2)), MidpointRounding.AwayFromZero);
         }
 
         public void StatView()

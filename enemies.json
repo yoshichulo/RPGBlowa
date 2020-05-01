@@ -8,8 +8,8 @@
         "DodgeChance": 0.05,
         "CritChance": 0.05,
         "CritMulti": 1.5,
-        "GoldRewardMin": 50,
-        "GoldRewardMax": 80 
+        "GoldReward": 50,
+        "ExpReward": 3
     },
     {
         "Name": "Hobgoblin",
@@ -20,7 +20,7 @@
         "DodgeChance": 0.1,
         "CritChance": 0.1,
         "CritMulti": 1.2,
-        "GoldRewardMin": 100,
-        "GoldRewardMax": 125 
+        "GoldReward": 100,
+        "ExpReward": 5
     }
 ]
