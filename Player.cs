@@ -23,27 +23,27 @@ namespace RPGBlowa
         public Player(string Name)
         {
             this.Name = Name;
-            this.Hp = 100;
-            this.Def = 5;
-            this.Atk = 10;
-            this.Gold = 0;
-            this.HitChance = .8;
-            this.DodgeChance = .1;
-            this.CritChance = .05;
-            this.CritMulti = 1.2;
+            Hp = 100;
+            Def = 5;
+            Atk = 10;
+            Gold = 0;
+            HitChance = .8;
+            DodgeChance = .1;
+            CritChance = .05;
+            CritMulti = 1.2;
         }
 
         public void StatView()
         {
-            Console.WriteLine("Name: " + this.Name);
-            Console.WriteLine("Hp: " + this.Hp);
-            Console.WriteLine("Def: " + this.Def);
-            Console.WriteLine("Atk: " + this.Atk);
-            Console.WriteLine("Gold: " + this.Gold);
-            Console.WriteLine("HitChance: " + this.HitChance);
-            Console.WriteLine("DodgeChance: " + this.DodgeChance);
-            Console.WriteLine("CritChance: " + this.CritChance);
-            Console.WriteLine("CritMulti: " + this.CritMulti);
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Hp: " + Hp);
+            Console.WriteLine("Def: " + Def);
+            Console.WriteLine("Atk: " + Atk);
+            Console.WriteLine("Gold: " + Gold);
+            Console.WriteLine("HitChance: " + HitChance);
+            Console.WriteLine("DodgeChance: " + DodgeChance);
+            Console.WriteLine("CritChance: " + CritChance);
+            Console.WriteLine("CritMulti: " + CritMulti);
         }
     }
 }
