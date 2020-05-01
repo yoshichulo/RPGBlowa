@@ -17,7 +17,6 @@ namespace RPGBlowa
 
             Menu.ShowMenu();
             Menu.SelectOption(player);
-
         }
     }
 }

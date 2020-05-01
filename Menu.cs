@@ -69,7 +69,10 @@ ____________ _____ ______ _
             {
                 
                 case 1:
-                    //Fight
+                    List<Enemy> enemies = JsonConvert.DeserializeObject<List<Enemy>>(File.ReadAllText("../../../enemies.json"));
+                    Random rand = new Random();
+
+                    Fighting.Fight(p, enemies[rand.Next(0, enemies.Count)]);
                     break;
                 case 2:
                     //Shop

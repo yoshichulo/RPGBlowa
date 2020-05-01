@@ -29,7 +29,7 @@ namespace RPGBlowa
             this.Gold = 0;
             this.HitChance = .8;
             this.DodgeChance = .1;
-            this.CritChance = .05;
+            this.CritChance = .1;
             this.CritMulti = 1.2;
         }
 
