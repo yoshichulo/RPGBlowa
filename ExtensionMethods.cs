@@ -12,9 +12,9 @@ namespace ExtensionMethods
             return rand.NextDouble() <= critChance;
         }
 
-        public static bool DoesHit(this Random rand, double hitChance)
+        public static bool DoesHit(this Random rand, double hitChance, double dodgeChance)
         {
-            return rand.NextDouble() <= hitChance;
+            return rand.NextDouble() <= hitChance * (1-dodgeChance);
         }
     }
 }

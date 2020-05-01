@@ -17,21 +17,23 @@ namespace RPGBlowa
 
             while (playerActualHp > 0 || enemyActualHp > 0)
             {
-                playerDmg = CalculateDamage(p.Atk, p.HitChance, p.CritChance, p.CritMulti);
-                enemyDmg = CalculateDamage(e.Atk, e.HitChance, e.CritChance, e.CritMulti);
+                playerDmg = CalculateDamage(p, e.DodgeChance);
+                enemyDmg = CalculateDamage(e, p.DodgeChance);
 
+                Console.WriteLine("Player deals: " + playerDmg);
+                Console.WriteLine("Enemy deals: " + enemyDmg);
             }
 
         }
 
-        public static int CalculateDamage(int atk, double hitChance, double critChance, double critMulti)
+        public static int CalculateDamage(Entity e, double dodgeChance)
         {
-            if (rand.DoesHit(hitChance))
+            if (rand.DoesHit(e.HitChance, dodgeChance))
             {
-                if (rand.IsCritical(critChance))
-                    return (int)Math.Round((atk * critMulti), MidpointRounding.AwayFromZero);
+                if (rand.IsCritical(e.CritChance))
+                    return (int)Math.Round((e.Atk * e.CritMulti), MidpointRounding.AwayFromZero);
                 else
-                    return atk;
+                    return e.Atk;
             }
             else
             {

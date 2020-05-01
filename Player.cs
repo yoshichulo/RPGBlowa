@@ -4,21 +4,11 @@ using System.Text;
 
 namespace RPGBlowa
 {
-    class Player
+    class Player : Entity
     {
-        public string Name { get; set; }
-        public int Hp { get; set; }
-        public int Def { get; set; }
-        public int Atk { get; set; }
         public int Gold { get; set; }
         public int Level { get; set; }
         public int Exp { get; set; }
-
-        public double HitChance { get; set; }
-        public double DodgeChance { get; set; }
-        public double CritChance { get; set; }
-        public double CritMulti { get; set; }
-
 
         public Player(string Name)
         {
