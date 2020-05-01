@@ -14,9 +14,10 @@ namespace RPGBlowa
         {
             this.Name = Name;
             Hp = 100;
-            Def = 5;
-            Atk = 10;
+            Def = 6;
+            Atk = 13;
             Gold = 0;
+            Level = 1;
             HitChance = .8;
             DodgeChance = .1;
             CritChance = .1;
@@ -40,15 +41,17 @@ namespace RPGBlowa
 
         public void StatView()
         {
-            Console.WriteLine("Name: " + this.Name);
-            Console.WriteLine("Hp: " + this.Hp);
-            Console.WriteLine("Def: " + this.Def);
-            Console.WriteLine("Atk: " + this.Atk);
-            Console.WriteLine("Gold: " + this.Gold);
-            Console.WriteLine("HitChance: " + this.HitChance);
-            Console.WriteLine("DodgeChance: " + this.DodgeChance);
-            Console.WriteLine("CritChance: " + this.CritChance);
-            Console.WriteLine("CritMulti: " + this.CritMulti);
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Level: " + Level);
+            Console.WriteLine("Exp: {0}/{1}", Exp, ExpNeeded());
+            Console.WriteLine("Hp: " + Hp);
+            Console.WriteLine("Def: " + Def);
+            Console.WriteLine("Atk: " + Atk);
+            Console.WriteLine("Gold: " + Gold);
+            Console.WriteLine("HitChance: " + HitChance);
+            Console.WriteLine("DodgeChance: " + DodgeChance);
+            Console.WriteLine("CritChance: " + CritChance);
+            Console.WriteLine("CritMulti: " + CritMulti);
         }
     }
 }

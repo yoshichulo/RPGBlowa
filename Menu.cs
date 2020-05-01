@@ -25,12 +25,17 @@ ____________ _____ ______ _
         {
             {1, "Fight"},
             {2, "Shop"},
-            {3, "Exit"}
+            {3, "View stats"},
+            {4, "Exit"},
         };
+
+        public static void ShowHeader()
+        {
+            Console.WriteLine(MenuHeader());
+        }
 
         public static void ShowMenu()
         {
-            Console.WriteLine(MenuHeader());
             Console.WriteLine("Welcome! What do you want to do? [1~{0}]\n", MenuOptions.Count);
 
             foreach (KeyValuePair<int, string> kvp in MenuOptions)
@@ -78,6 +83,9 @@ ____________ _____ ______ _
                     //Shop
                     break;
                 case 3:
+                    p.StatView();
+                    break;
+                case 4:
                     Environment.Exit(0);
                     break;
             }
