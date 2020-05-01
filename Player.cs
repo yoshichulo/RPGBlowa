@@ -28,7 +28,22 @@ namespace RPGBlowa
             this.Atk = 10;
             this.Gold = 0;
             this.HitChance = .8;
-            this.DodgeChance = .8;
+            this.DodgeChance = .1;
+            this.CritChance = .05;
+            this.CritMulti = 1.2;
+        }
+
+        public void StatView()
+        {
+            Console.WriteLine("Name: " + this.Name);
+            Console.WriteLine("Hp: " + this.Hp);
+            Console.WriteLine("Def: " + this.Def);
+            Console.WriteLine("Atk: " + this.Atk);
+            Console.WriteLine("Gold: " + this.Gold);
+            Console.WriteLine("HitChance: " + this.HitChance);
+            Console.WriteLine("DodgeChance: " + this.DodgeChance);
+            Console.WriteLine("CritChance: " + this.CritChance);
+            Console.WriteLine("CritMulti: " + this.CritMulti);
         }
     }
 }
