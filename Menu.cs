@@ -31,12 +31,14 @@ ____________ _____ ______ _
         public static void ShowMenu()
         {
             Console.WriteLine(MenuHeader());
-            Console.WriteLine("Welcome! What do you want to do? [1~{0}]\n\n", MenuOptions.Count);
+            Console.WriteLine("Welcome! What do you want to do? [1~{0}]\n", MenuOptions.Count);
 
             foreach (KeyValuePair<int, string> kvp in MenuOptions)
             {
                 Console.WriteLine("{0}. {1}", kvp.Key, kvp.Value);
             }
+
+            Console.WriteLine();
         }
 
         public static void SelectOption(Player p)
