@@ -29,7 +29,7 @@ ____________ _____ ______ _
         public static void ShowMenu()
         {
             Console.WriteLine(MenuHeader());
-            Console.WriteLine("Welcome! What do you want to do?\n");
+            Console.WriteLine("Welcome! What do you want to do? [1~{0}]\n\n", MenuOptions.Count);
 
             foreach (KeyValuePair<int, string> kvp in MenuOptions)
             {
@@ -37,9 +37,34 @@ ____________ _____ ______ _
             }
         }
 
-        private static void SelectOption()
+        public static void SelectOption()
         {
+            bool validValue = false;
+            int selectedOption = 0;
 
+            // Ask for a valid value
+            while (!validValue)
+            {
+                string input = Console.ReadLine();
+                try
+                {
+                    selectedOption = Int32.Parse(input);
+                    if (selectedOption < 1 || selectedOption > MenuOptions.Count)
+                        Console.WriteLine("Option is not in range. Try again");
+
+                    else
+                        validValue = true;
+                }
+                catch(FormatException)
+                {
+                    Console.WriteLine("You need to introduce a numeric value. Try again");
+                }
+            }
+
+            switch (selectedOption)
+            {
+
+            }
         }
     }
 }
