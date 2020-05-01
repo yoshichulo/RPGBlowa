@@ -9,7 +9,15 @@ namespace RPGBlowa
     {
         static void Main(string[] args)
         {
-            List<Enemy> enemies = JsonConvert.DeserializeObject<List<Enemy>>(File.ReadAllText("../../../enemies.json"));
+            // Setting up the player
+            Console.WriteLine("What is your name?");
+            string playerName = Console.ReadLine();
+
+            Player player = new Player(playerName);
+
+            Menu.ShowMenu();
+            Menu.SelectOption(player);
+
         }
     }
 }
