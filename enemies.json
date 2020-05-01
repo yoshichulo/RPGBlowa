@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Goblin",
+        "Hp": 25,
+        "Atk": 6,
+        "Def": 4,
+        "HitChance": 0.6,
+        "DodgeChance": 0.05,
+        "CritChance": 0.05,
+        "CritMulti": 1.5,
+        "GoldRewardMin": 50,
+        "GoldRewardMax": 80 
+    },
+    {
+        "Name": "Hobgoblin",
+        "Hp": 35,
+        "Atk": 8,
+        "Def": 7,
+        "HitChance": 0.7,
+        "DodgeChance": 0.1,
+        "CritChance": 0.1,
+        "CritMulti": 1.2,
+        "GoldRewardMin": 100,
+        "GoldRewardMax": 125 
+    }
+]
